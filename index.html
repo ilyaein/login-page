@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+
+
+<head>
+  <title>Login Page</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f4f4f4;
+    }
+    
+    .form-div {
+      width: 300px;
+      margin: 0 auto;
+      padding: 20px;
+      background-color: #ffffff;
+      border: 1px solid #dddddd;
+      box-shadow: 0px 2px 5px rgb(187, 187, 187);
+    }
+    
+    h1 {
+      text-align: center;
+    }
+    
+    input[type="text"], input[type="password"] {
+      width: 100%;
+      padding: 10px;
+      padding-right: 1px;
+      margin-bottom: 20px;
+      border: 1px solid #dddddd;
+    }
+    
+    input[type="submit"] {
+      width: 100%;
+      padding: 10px;
+      background-color: SteelBlue;
+      color: #ffffff;
+      border: none;
+      cursor: pointer;
+      margin-left: 3px;
+      border: 1px solid #ffffff;
+    }
+    
+    input[type="submit"]:hover {
+        color: SteelBlue;
+        background-color: #ffffff;
+        border: 1px solid SteelBlue;
+
+    }
+  </style>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+
+
+<body>
+  <div class="form-div">
+    <h1>Login</h1>
+    <form action="login.php" method="POST">
+      <input type="text" name="username" placeholder="Username" required>
+      <input type="password" name="password" placeholder="Password" required>
+      <input type="submit" value="Login">
+    </form>
+  </div>
+</body>
+
+
+</html>
